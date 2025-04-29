@@ -1,5 +1,5 @@
 {
-    "scriptFile": "function_app.py",
+    "scriptFile": "controller.py",
     "bindings": [
       {
         "authLevel": "anonymous",
