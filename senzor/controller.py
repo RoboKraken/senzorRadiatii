@@ -11,7 +11,7 @@ from senzor.database import insertData
 def main(req: func.HttpRequest) -> func.HttpResponse:
     #Simuleaza date
     radiationLevel = random.uniform(0.1, 5.0)
-    timestamp = datetime.datetime.now().isoformat()
+    timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     #Creeaza obiect de date
     data = radiationData(level=radiationLevel, timestamp=timestamp)
